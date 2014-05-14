@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   wolf3d.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: po-conno <po-conno@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/01/10 17:01:38 by po-conno          #+#    #+#             */
-/*   Updated: 2014/01/19 18:59:20 by po-conno         ###   ########.fr       */
+/*   Created: 2014/01/10 17:01:38 by gleger            #+#    #+#             */
+/*   Updated: 2014/05/14 03:00:26 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,4 +102,4 @@ void		get_wall_height(t_wolf *ptr);
 int			loop_arrows(t_wolf *ptr);
 int			key_release(int keycode, t_wolf *ptr);
 
-#endif /* !WOLF3D_H */
+#endif
