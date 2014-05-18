@@ -6,7 +6,7 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/10 17:01:38 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/18 13:19:11 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 15:23:06 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,50 +74,51 @@ typedef struct			s_wolf
 	int					keys[4];
 }						t_wolf;
 
-int			get_next_line(int const fd, char **line);
-int			ft_count_words(char *s, char c);
-char		**ft_strsplit(char const *s, char c);
-void		ft_strdel(char **as);
-int			ft_atoi(const char *str);
-char		*ft_strdup(const char *s1);
-void		ft_memdel(void **ap);
-char		*ft_strnew(size_t size);
-char		*ft_strchr(const char *s, int c);
-char		*ft_strcpy(char *s1, const char *s2);
-char		*ft_strdup(const char *s1);
-void		ft_strclr(char *s);
-char		*ft_strdup(const char *s1);
-char		*ft_strjoin(char const *s1, char const *s2);
-char		*ft_strsub(char const *s, unsigned int start, size_t len);
-size_t		ft_strlen(const char *s);
-t_lst		*make_list(char **line);
-t_lst		*add_to_list(t_lst **list, t_lst *new);
-int			free_split(char ***tmp);
-int			**treat_list(t_lst **list, int **tab);
-int			**read_maze(char *file, int **tab, t_lst **list);
-int			**make_tab(char **strings, int **tab, int j, int i);
-void		free_list(t_lst *lst);
-t_lst		*del_link(t_wolf **ptr, t_lst *lst);
-void		set_mlx(t_wolf *ptr, t_mlx *e);
-int			expose_hook(t_mlx *e);
-void		create_image(t_wolf *ptr);
-void		draw_sky(t_wolf *ptr);
-void		draw_floor(t_wolf *ptr);
-void		draw_bg(t_wolf *ptr);
-int			set_cam(t_wolf *ptr, int max_w, int max_h);
-void		draw_walls(t_wolf *ptr);
-void		go_front(t_wolf *ptr);
-void		go_back(t_wolf *ptr);
-void		go_left(t_wolf *ptr);
-void		go_right(t_wolf *ptr);
-t_wolf		*init_ptr(void);
-void		make_blank(t_wolf *ptr);
-int			key_hook(int keycode, t_wolf *ptr);
-void		set_rays(t_wolf *ptr, int x);
-void		intersection_dist(t_wolf *ptr);
-void		find_wall(t_wolf *ptr);
-void		get_wall_height(t_wolf *ptr);
-int			loop_arrows(t_wolf *ptr);
-int			key_release(int keycode, t_wolf *ptr);
+int						get_next_line(int const fd, char **line);
+int						ft_count_words(char *s, char c);
+char					**ft_strsplit(char const *s, char c);
+void					ft_strdel(char **as);
+int						ft_atoi(const char *str);
+char					*ft_strdup(const char *s1);
+void					ft_memdel(void **ap);
+char					*ft_strnew(size_t size);
+char					*ft_strchr(const char *s, int c);
+char					*ft_strcpy(char *s1, const char *s2);
+char					*ft_strdup(const char *s1);
+void					ft_strclr(char *s);
+char					*ft_strdup(const char *s1);
+char					*ft_strjoin(char const *s1, char const *s2);
+char					*ft_strsub(char const *s, unsigned int start, \
+	size_t len);
+size_t					ft_strlen(const char *s);
+t_lst					*make_list(char **line);
+t_lst					*add_to_list(t_lst **list, t_lst *new);
+int						free_split(char ***tmp);
+int						**treat_list(t_lst **list, int **tab);
+int						**read_maze(char *file, int **tab, t_lst **list);
+int						**make_tab(char **strings, int **tab, int j, int i);
+void					free_list(t_lst *lst);
+t_lst					*del_link(t_wolf **ptr, t_lst *lst);
+void					set_mlx(t_wolf *ptr, t_mlx *e);
+int						expose_hook(t_mlx *e);
+void					create_image(t_wolf *ptr);
+void					draw_sky(t_wolf *ptr);
+void					draw_floor(t_wolf *ptr);
+void					draw_bg(t_wolf *ptr);
+int						set_cam(t_wolf *ptr, int max_w, int max_h);
+void					draw_walls(t_wolf *ptr);
+void					go_front(t_wolf *ptr);
+void					go_back(t_wolf *ptr);
+void					go_left(t_wolf *ptr);
+void					go_right(t_wolf *ptr);
+t_wolf					*init_ptr(void);
+void					make_blank(t_wolf *ptr);
+int						key_hook(int keycode, t_wolf *ptr);
+void					set_rays(t_wolf *ptr, int x);
+void					intersection_dist(t_wolf *ptr);
+void					find_wall(t_wolf *ptr);
+void					get_wall_height(t_wolf *ptr);
+int						loop_arrows(t_wolf *ptr);
+int						key_release(int keycode, t_wolf *ptr);
 
 #endif
