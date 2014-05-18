@@ -6,12 +6,11 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 21:11:37 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:03:21 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 13:03:58 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
 #include "wolf3d.h"
 
 int		free_split(char ***tmp)

@@ -6,13 +6,13 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/03 16:53:14 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:03:06 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 13:16:13 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "libft.h"
 #include "get_next_line.h"
+#include "wolf3d.h"
 
 int			end_line(char *str, char **line, int i)
 {

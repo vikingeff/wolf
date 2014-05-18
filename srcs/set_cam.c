@@ -6,11 +6,10 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/15 13:58:27 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:03:45 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 13:04:08 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "wolf3d.h"
 
 int		set_cam(t_wolf *ptr, int max_w, int max_h)

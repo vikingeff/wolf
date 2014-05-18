@@ -6,15 +6,18 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/10 17:01:38 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/18 13:01:16 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 13:19:11 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WOLF3D_H
 # define WOLF3D_H
 
-# define WIDTH 1920
-# define HEIGTH 1050
+# include <unistd.h>
+# include <stdlib.h>
+
+# define WIDTH 1440
+# define HEIGTH 900
 # define MSPEED 0.1
 # define RSPEED 0.1
 # define WDISTX fabs((ptr->mapx - ptr->posx + (1 - x_angle) / 2) / ptr->raydirx)
@@ -73,6 +76,20 @@ typedef struct			s_wolf
 
 int			get_next_line(int const fd, char **line);
 int			ft_count_words(char *s, char c);
+char		**ft_strsplit(char const *s, char c);
+void		ft_strdel(char **as);
+int			ft_atoi(const char *str);
+char		*ft_strdup(const char *s1);
+void		ft_memdel(void **ap);
+char		*ft_strnew(size_t size);
+char		*ft_strchr(const char *s, int c);
+char		*ft_strcpy(char *s1, const char *s2);
+char		*ft_strdup(const char *s1);
+void		ft_strclr(char *s);
+char		*ft_strdup(const char *s1);
+char		*ft_strjoin(char const *s1, char const *s2);
+char		*ft_strsub(char const *s, unsigned int start, size_t len);
+size_t		ft_strlen(const char *s);
 t_lst		*make_list(char **line);
 t_lst		*add_to_list(t_lst **list, t_lst *new);
 int			free_split(char ***tmp);

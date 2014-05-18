@@ -15,7 +15,6 @@ NAME = wolf3D
 NAMELIB = libw3d.a
 
 HEADERS =	-I headers/ \
-			-I libft/includes/ \
 			-I /opt/X11/include/X11/
 
 LIBFT = libft/libft.a
