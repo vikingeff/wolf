@@ -33,6 +33,7 @@ SRC =	srcs/file_to_tab.c \
 		srcs/make_blank.c \
 		srcs/get_walls_pos.c \
 		srcs/treat_keys.c \
+		srcs/tool.c \
 		main.c
 
 OBJ = $(SRC:.c=.o)
@@ -45,18 +46,17 @@ CC = gcc -g -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	make -C libft/
 	ar rc $(NAMELIB) $(OBJ)
 	ranlib $(NAMELIB)
-	$(CC) -o $@ $(OBJ) $(NAMELIB) $(LIBFT) -L$(LIB)
+	$(CC) -o $@ $(OBJ) $(NAMELIB) -L$(LIB)
 
 clean:
-	make clean -C libft/
 	@rm -f $(OBJ)
 
 fclean: clean
-	make fclean -C libft/
 	@rm -f $(NAMELIB)
 	@rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

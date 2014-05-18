@@ -6,7 +6,7 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/15 13:30:33 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:02:40 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 12:40:12 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,10 @@ void	draw_sky(t_wolf *ptr)
 	int		x;
 	int		y;
 	int		addr;
-	int		color;
 	t_img	i;
 
 	x = 0;
 	i = ptr->i;
-	color = 0x007FFF;
 	while (x < WIDTH)
 	{
 		y = 0;
@@ -45,12 +43,10 @@ void	draw_floor(t_wolf *ptr)
 	int		x;
 	int		y;
 	int		addr;
-	int		color;
 	t_img	i;
 
 	i = ptr->i;
 	x = 0;
-	color = 0xFF0000;
 	while (x < WIDTH)
 	{
 		y = (HEIGTH / 2);

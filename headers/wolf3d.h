@@ -6,7 +6,7 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/10 17:01:38 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:00:26 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 13:01:16 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ typedef struct			s_wolf
 }						t_wolf;
 
 int			get_next_line(int const fd, char **line);
+int			ft_count_words(char *s, char c);
 t_lst		*make_list(char **line);
 t_lst		*add_to_list(t_lst **list, t_lst *new);
 int			free_split(char ***tmp);
