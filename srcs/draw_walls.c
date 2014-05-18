@@ -6,14 +6,13 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/15 13:55:08 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:02:48 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:42:47 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <mlx.h>
 #include <math.h>
-#include <stdlib.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 static int		*ew_sides_colors(t_wolf *ptr)
 {

@@ -6,13 +6,12 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/14 16:23:26 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:03:37 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:43:48 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <mlx.h>
-#include <stdlib.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 int		expose_hook(t_mlx *e)
 {

@@ -6,15 +6,14 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/03 16:53:14 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/18 13:16:13 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:43:29 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "get_next_line.h"
-#include "wolf3d.h"
+#include <get_next_line.h>
+#include <wolf3d.h>
 
-int			end_line(char *str, char **line, int i)
+int				end_line(char *str, char **line, int i)
 {
 	char		*tmp;
 	char		*tmp2;
@@ -42,7 +41,7 @@ int			end_line(char *str, char **line, int i)
 	return (1);
 }
 
-int			fill_line(char *str, char **line)
+int				fill_line(char *str, char **line)
 {
 	char		*tmp;
 
@@ -61,9 +60,9 @@ int			fill_line(char *str, char **line)
 	return (0);
 }
 
-int			find_lf(char const *str, int c)
+int				find_lf(char const *str, int c)
 {
-	int		i;
+	int			i;
 
 	i = 0;
 	while (str[i] != c && str[i] != 0)
@@ -71,7 +70,7 @@ int			find_lf(char const *str, int c)
 	return ((str[i] == '\0') ? 0 : (i + 1));
 }
 
-int			get_next_line(int const fd, char **line)
+int				get_next_line(int const fd, char **line)
 {
 	int			i;
 	ssize_t		ret;
@@ -91,9 +90,8 @@ int			get_next_line(int const fd, char **line)
 			ft_strclr(str);
 		if ((i = find_lf(str, '\n')))
 			return (end_line(str, line, (i - 1)));
-		else
-			if (fill_line(str, line) == -1)
-				return (-1);
+		else if (fill_line(str, line) == -1)
+			return (-1);
 	}
 	ft_strdel(&str);
 	return ((ret < 0) ? -1 : 0);

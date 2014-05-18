@@ -6,12 +6,11 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/19 18:07:42 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:03:53 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:44:24 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 int		key_hook(int keycode, t_wolf *ptr)
 {

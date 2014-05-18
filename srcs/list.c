@@ -6,12 +6,11 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 21:11:37 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/18 13:03:58 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:42:27 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 int		free_split(char ***tmp)
 {
@@ -54,7 +53,7 @@ void	free_list(t_lst *lst)
 	t_lst	*tmp;
 
 	tmp = lst;
-	while (tmp->next != NULL )
+	while (tmp->next != NULL)
 	{
 		if (tmp != lst)
 			lst = tmp;

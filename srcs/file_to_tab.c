@@ -6,14 +6,12 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/21 21:01:26 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/18 13:03:42 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:42:59 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <fcntl.h>
-#include <stdlib.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 int		**make_tab(char **strings, int **tab, int j, int i)
 {

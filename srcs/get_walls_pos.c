@@ -6,12 +6,12 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/19 13:01:34 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:03:14 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:42:17 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 void	set_rays(t_wolf *ptr, int x)
 {
@@ -62,7 +62,7 @@ void	find_wall(t_wolf *ptr)
 			ptr->side = 1;
 		}
 		if (ptr->maze[ptr->mapx][ptr->mapy] > 0)
-				hit = 1;
+			hit = 1;
 	}
 	ptr->walldist = (ptr->side == 0) ? WDISTX : WDISTY;
 }

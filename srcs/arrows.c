@@ -6,12 +6,12 @@
 /*   By: gleger <gleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/01/18 21:58:41 by gleger            #+#    #+#             */
-/*   Updated: 2014/05/14 03:02:32 by gleger           ###   ########.fr       */
+/*   Updated: 2014/05/18 14:42:32 by gleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "wolf3d.h"
+#include <wolf3d.h>
 
 void	go_front(t_wolf *ptr)
 {
